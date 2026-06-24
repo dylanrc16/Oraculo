@@ -1,0 +1,84 @@
+{
+    "texto": "¿Es una serie de animación japonesa (Anime)?",
+    "es_pregunta": true,
+    "si": {
+        "texto": "¿El protagonista es un ninja que quiere ser el líder de su aldea?",
+        "es_pregunta": true,
+        "si": {
+            "texto": "Naruto",
+            "es_pregunta": false
+        },
+        "no": {
+            "texto": "¿Es un anime del género Shonen que involucra peleas y transformaciones?",
+            "es_pregunta": true,
+            "si": {
+                "texto": "¿La trama principal gira en torno a unas esferas mágicas que conceden deseos?",
+                "es_pregunta": true,
+                "si": {
+                    "texto": "Dragon Ball Z",
+                    "es_pregunta": false
+                },
+                "no": {
+                    "texto": "¿El protagonista usa una katana y caza demonios?",
+                    "es_pregunta": true,
+                    "si": {
+                        "texto": "Demon Slayer (Kimetsu no Yaiba)",
+                        "es_pregunta": false
+                    },
+                    "no": {
+                        "texto": "One Piece",
+                        "es_pregunta": false
+                    }
+                }
+            },
+            "no": {
+                "texto": "¿Es un thriller psicológico sobre un cuaderno que puede matar personas?",
+                "es_pregunta": true,
+                "si": {
+                    "texto": "Death Note",
+                    "es_pregunta": false
+                },
+                "no": {
+                    "texto": "Attack on Titan",
+                    "es_pregunta": false
+                }
+            }
+        }
+    },
+    "no": {
+        "texto": "¿Es una serie de acción real (Live-Action)?",
+        "es_pregunta": true,
+        "si": {
+            "texto": "¿La trama principal trata sobre el narcotráfico y la producción de metanfetamina?",
+            "es_pregunta": true,
+            "si": {
+                "texto": "Breaking Bad",
+                "es_pregunta": false
+            },
+            "no": {
+                "texto": "¿Es una serie de fantasía medieval con dragones y familias peleando por un trono?",
+                "es_pregunta": true,
+                "si": {
+                    "texto": "Game of Thrones",
+                    "es_pregunta": false
+                },
+                "no": {
+                    "texto": "¿Es una serie de ciencia ficción de Netflix ambientada en los años 80 con un monstruo llamado Demogorgon?",
+                    "es_pregunta": true,
+                    "si": {
+                        "texto": "Stranger Things",
+                        "es_pregunta": false
+                    },
+                    "no": {
+                        "texto": "The Office",
+                        "es_pregunta": false
+                    }
+                }
+            }
+        },
+        "no": {
+            "texto": "Los Simpsons",
+            "es_pregunta": false
+        }
+    }
+}

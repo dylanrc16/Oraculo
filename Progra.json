@@ -1,0 +1,92 @@
+{
+    "texto": "¿Es un lenguaje de programación?",
+    "es_pregunta": true,
+    "si": {
+        "texto": "¿Se utiliza principalmente para el desarrollo web en el navegador (Frontend)?",
+        "es_pregunta": true,
+        "si": {
+            "texto": "JavaScript",
+            "es_pregunta": false
+        },
+        "no": {
+            "texto": "¿Es un lenguaje enfocado en la ciencia de datos, inteligencia artificial y scripting simple?",
+            "es_pregunta": true,
+            "si": {
+                "texto": "Python",
+                "es_pregunta": false
+            },
+            "no": {
+                "texto": "¿Es un lenguaje de bajo nivel, compilado y con gestión manual de memoria?",
+                "es_pregunta": true,
+                "si": {
+                    "texto": "¿Es la versión moderna orientada a objetos que incluye clases?",
+                    "es_pregunta": true,
+                    "si": {
+                        "texto": "C++",
+                        "es_pregunta": false
+                    },
+                    "no": {
+                        "texto": "C",
+                        "es_pregunta": false
+                    }
+                },
+                "no": {
+                    "texto": "¿Es un lenguaje fuertemente tipado que corre sobre una máquina virtual (JVM)?",
+                    "es_pregunta": true,
+                    "si": {
+                        "texto": "Java",
+                        "es_pregunta": false
+                    },
+                    "no": {
+                        "texto": "Rust",
+                        "es_pregunta": false
+                    }
+                }
+            }
+        }
+    },
+    "no": {
+        "texto": "¿Es una herramienta de control de versiones?",
+        "es_pregunta": true,
+        "si": {
+            "texto": "Git",
+            "es_pregunta": false
+        },
+        "no": {
+            "texto": "¿Es una base de datos?",
+            "es_pregunta": true,
+            "si": {
+                "texto": "¿Es una base de datos relacional basada en tablas (SQL)?",
+                "es_pregunta": true,
+                "si": {
+                    "texto": "PostgreSQL",
+                    "es_pregunta": false
+                },
+                "no": {
+                    "texto": "MongoDB",
+                    "es_pregunta": false
+                }
+            },
+            "no": {
+                "texto": "¿Es un editor de código o entorno de desarrollo (IDE)?",
+                "es_pregunta": true,
+                "si": {
+                    "texto": "¿Es el editor ligero más popular desarrollado por Microsoft?",
+                    "es_pregunta": true,
+                    "si": {
+                        "texto": "VS Code",
+                        "es_pregunta": false
+                    },
+                    "no": {
+                        "texto": "Neovim",
+                        "es_pregunta": false
+                    }
+                },
+                "no": {
+                    "texto": "Docker",
+                    "es_pregunta": false
+                }
+            }
+        }
+    }
+}

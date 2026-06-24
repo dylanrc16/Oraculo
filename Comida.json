@@ -1,0 +1,100 @@
+{
+    "texto": "¿Es un platillo principalmente salado?",
+    "es_pregunta": true,
+    "si": {
+        "texto": "¿Se come principalmente con las manos (sin cubiertos)?",
+        "es_pregunta": true,
+        "si": {
+            "texto": "¿Tiene una base de masa circular horneada con queso derretido encima?",
+            "es_pregunta": true,
+            "si": {
+                "texto": "Pizza",
+                "es_pregunta": false
+            },
+            "no": {
+                "texto": "¿Lleva carne entre dos panes redondos?",
+                "es_pregunta": true,
+                "si": {
+                    "texto": "Hamburguesa",
+                    "es_pregunta": false
+                },
+                "no": {
+                    "texto": "¿Utiliza una tortilla de maíz o trigo que se enrolla o dobla?",
+                    "es_pregunta": true,
+                    "si": {
+                        "texto": "¿La tortilla va completamente enrollada y cerrada en los extremos (estilo norteño)?",
+                        "es_pregunta": true,
+                        "si": {
+                            "texto": "Burrito",
+                            "es_pregunta": false
+                        },
+                        "no": {
+                            "texto": "Tacos",
+                            "es_pregunta": false
+                        }
+                    },
+                    "no": {
+                        "texto": "Papas fritas",
+                        "es_pregunta": false
+                    }
+                }
+            }
+        },
+        "no": {
+            "texto": "¿Es un platillo de origen asiático?",
+            "es_pregunta": true,
+            "si": {
+                "texto": "¿Consiste en rollos de arroz con alga nori y pescado o mariscos?",
+                "es_pregunta": true,
+                "si": {
+                    "texto": "Sushi",
+                    "es_pregunta": false
+                },
+                "no": {
+                    "texto": "Ramen",
+                    "es_pregunta": false
+                }
+            },
+            "no": {
+                "texto": "¿Es una pasta italiana larga con salsa?",
+                "es_pregunta": true,
+                "si": {
+                    "texto": "Espaguetis",
+                    "es_pregunta": false
+                },
+                "no": {
+                    "texto": "Lasaña",
+                    "es_pregunta": false
+                }
+            }
+        }
+    },
+    "no": {
+        "texto": "¿Es un postre frío o congelado?",
+        "es_pregunta": true,
+        "si": {
+            "texto": "¿Se sirve comúnmente en un cono/cono de galleta o en un vaso?",
+            "es_pregunta": true,
+            "si": {
+                "texto": "Helado",
+                "es_pregunta": false
+            },
+            "no": {
+                "texto": "Cheesecake",
+                "es_pregunta": false
+            }
+        },
+        "no": {
+            "texto": "¿Es una masa frita en forma de anillo con cobertura dulce?",
+            "es_pregunta": true,
+            "si": {
+                "texto": "Dona",
+                "es_pregunta": false
+            },
+            "no": {
+                "texto": "Panqueques (Hotcakes)",
+                "es_pregunta": false
+            }
+        }
+    }
+}

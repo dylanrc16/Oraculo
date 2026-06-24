@@ -1,0 +1,69 @@
+
+{
+    "texto": "¿Es un juego de disparos (Shooter)?",
+    "es_pregunta": true,
+    "si": {
+        "texto": "¿Es en primera persona (FPS)?",
+        "es_pregunta": true,
+        "si": {
+            "texto": "¿Te enfrentás a demonios en el infierno?",
+            "es_pregunta": true,
+            "si": {
+                "texto": "Doom",
+                "es_pregunta": false
+            },
+            "no": {
+                "texto": "Counter-Strike",
+                "es_pregunta": false
+            }
+        },
+        "no": {
+            "texto": "¿Es un Battle Royale donde se construye?",
+            "es_pregunta": true,
+            "si": {
+                "texto": "Fortnite",
+                "es_pregunta": false
+            },
+            "no": {
+                "texto": "Grand Theft Auto V",
+                "es_pregunta": false
+            }
+        }
+    },
+    "no": {
+        "texto": "¿Es un juego de plataformas?",
+        "es_pregunta": true,
+        "si": {
+            "texto": "¿El protagonista es un fontanero italiano?",
+            "es_pregunta": true,
+            "si": {
+                "texto": "Super Mario Bros",
+                "es_pregunta": false
+            },
+            "no": {
+                "texto": "Sonic the Hedgehog",
+                "es_pregunta": false
+            }
+        },
+        "no": {
+            "texto": "¿Es un juego de rol (RPG) o estrategia?",
+            "es_pregunta": true,
+            "si": {
+                "texto": "¿El mundo está hecho completamente de cubos/bloques?",
+                "es_pregunta": true,
+                "si": {
+                    "texto": "Minecraft",
+                    "es_pregunta": false
+                },
+                "no": {
+                    "texto": "The Legend of Zelda: Breath of the Wild",
+                    "es_pregunta": false
+                }
+            },
+            "no": {
+                "texto": "Tetris",
+                "es_pregunta": false
+            }
+        }
+    }
+}

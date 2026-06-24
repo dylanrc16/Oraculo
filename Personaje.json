@@ -1,0 +1,108 @@
+{
+    "texto": "¿Es un superhéroe?",
+    "es_pregunta": true,
+    "si": {
+        "texto": "¿Pertenece al universo de Marvel?",
+        "es_pregunta": true,
+        "si": {
+            "texto": "¿Tiene superpoderes biológicos o mutantes?",
+            "es_pregunta": true,
+            "si": {
+                "texto": "¿Sus poderes están basados en un insecto o arácnido?",
+                "es_pregunta": true,
+                "si": {
+                    "texto": "¿Lanza telarañas y viste de rojo y azul?",
+                    "es_pregunta": true,
+                    "si": {
+                        "texto": "Spider-Man",
+                        "es_pregunta": false
+                    },
+                    "no": {
+                        "texto": "Ant-Man",
+                        "es_pregunta": false
+                    }
+                },
+                "no": {
+                    "texto": "¿Tiene garras de adamantium y factor de curación?",
+                    "es_pregunta": true,
+                    "si": {
+                        "texto": "Wolverine",
+                        "es_pregunta": false
+                    },
+                    "no": {
+                        "texto": "Hulk",
+                        "es_pregunta": false
+                    }
+                }
+            },
+            "no": {
+                "texto": "¿Es un dios nórdico que usa un martillo?",
+                "es_pregunta": true,
+                "si": {
+                    "texto": "Thor",
+                    "es_pregunta": false
+                },
+                "no": {
+                    "texto": "¿Usa una armadura de alta tecnología construida por él mismo?",
+                    "es_pregunta": true,
+                    "si": {
+                        "texto": "Iron Man",
+                        "es_pregunta": false
+                    },
+                    "no": {
+                        "texto": "Capitán América",
+                        "es_pregunta": false
+                    }
+                }
+            }
+        },
+        "no": {
+            "texto": "¿Pertenece al universo de DC Comics?",
+            "es_pregunta": true,
+            "si": {
+                "texto": "¿Tiene superpoderes alienígenas y vuela?",
+                "es_pregunta": true,
+                "si": {
+                    "texto": "¿Lleva una capa roja y una 'S' en el pecho?",
+                    "es_pregunta": true,
+                    "si": {
+                        "texto": "Superman",
+                        "es_pregunta": false
+                    },
+                    "no": {
+                        "texto": "Linterna Verde",
+                        "es_pregunta": false
+                    }
+                },
+                "no": {
+                    "texto": "¿Es un humano multimillonario que opera de noche?",
+                    "es_pregunta": true,
+                    "si": {
+                        "texto": "Batman",
+                        "es_pregunta": false
+                    },
+                    "no": {
+                        "texto": "Flash",
+                        "es_pregunta": false
+                    }
+                }
+            },
+            "no": {
+                "texto": "Ben 10",
+                "es_pregunta": false
+            }
+        }
+    },
+    "no": {
+        "texto": "¿Es un personaje de anime?",
+        "es_pregunta": true,
+        "si": {
+            "texto": "Goku",
+            "es_pregunta": false
+        },
+        "no": {
+            "texto": "Shrek",
+            "es_pregunta": false
+        }
+    }
+}
