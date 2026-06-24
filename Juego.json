@@ -1,4 +1,3 @@
-
 {
     "texto": "¿Es un juego de disparos (Shooter)?",
     "es_pregunta": true,
@@ -13,8 +12,24 @@
                 "es_pregunta": false
             },
             "no": {
-                "texto": "Counter-Strike",
-                "es_pregunta": false
+                "texto": "¿Es un juego táctico de plantar o desactivar una bomba?",
+                "es_pregunta": true,
+                "si": {
+                    "texto": "Counter-Strike",
+                    "es_pregunta": false
+                },
+                "no": {
+                    "texto": "¿Los personajes tienen habilidades o superpoderes mágicos?",
+                    "es_pregunta": true,
+                    "si": {
+                        "texto": "Valorant",
+                        "es_pregunta": false
+                    },
+                    "no": {
+                        "texto": "Call of Duty: Warzone",
+                        "es_pregunta": false
+                    }
+                }
             }
         },
         "no": {
@@ -25,8 +40,24 @@
                 "es_pregunta": false
             },
             "no": {
-                "texto": "Grand Theft Auto V",
-                "es_pregunta": false
+                "texto": "¿Sos un criminal en un mundo abierto masivo en Los Santos?",
+                "es_pregunta": true,
+                "si": {
+                    "texto": "Grand Theft Auto V",
+                    "es_pregunta": false
+                },
+                "no": {
+                    "texto": "¿Es un shooter de héroes en tercera persona con plantas y muertos vivientes?",
+                    "es_pregunta": true,
+                    "si": {
+                        "texto": "Plants vs. Zombies: Garden Warfare",
+                        "es_pregunta": false
+                    },
+                    "no": {
+                        "texto": "Apex Legends",
+                        "es_pregunta": false
+                    }
+                }
             }
         }
     },
@@ -41,12 +72,28 @@
                 "es_pregunta": false
             },
             "no": {
-                "texto": "Sonic the Hedgehog",
-                "es_pregunta": false
+                "texto": "¿El protagonista es un erizo azul hiperveloz?",
+                "es_pregunta": true,
+                "si": {
+                    "texto": "Sonic the Hedgehog",
+                    "es_pregunta": false
+                },
+                "no": {
+                    "texto": "¿Es un juego moderno extremadamente difícil donde escalás una montaña?",
+                    "es_pregunta": true,
+                    "si": {
+                        "texto": "Celeste",
+                        "es_pregunta": false
+                    },
+                    "no": {
+                        "texto": "Crash Bandicoot",
+                        "es_pregunta": false
+                    }
+                }
             }
         },
         "no": {
-            "texto": "¿Es un juego de rol (RPG) o estrategia?",
+            "texto": "¿Es un juego de rol (RPG), mundo abierto o estrategia?",
             "es_pregunta": true,
             "si": {
                 "texto": "¿El mundo está hecho completamente de cubos/bloques?",
@@ -56,13 +103,45 @@
                     "es_pregunta": false
                 },
                 "no": {
-                    "texto": "The Legend of Zelda: Breath of the Wild",
-                    "es_pregunta": false
+                    "texto": "¿Controlás a un héroe llamado Link para salvar a una princesa?",
+                    "es_pregunta": true,
+                    "si": {
+                        "texto": "The Legend of Zelda: Breath of the Wild",
+                        "es_pregunta": false
+                    },
+                    "no": {
+                        "texto": "¿Es un juego competitivo online de estrategia por carriles (MOBA)?",
+                        "es_pregunta": true,
+                        "si": {
+                            "texto": "League of Legends",
+                            "es_pregunta": false
+                        },
+                        "no": {
+                            "texto": "The Witcher 3: Wild Hunt",
+                            "es_pregunta": false
+                        }
+                    }
                 }
             },
             "no": {
-                "texto": "Tetris",
-                "es_pregunta": false
+                "texto": "¿Es un juego de deportes o carreras de autos?",
+                "es_pregunta": true,
+                "si": {
+                    "texto": "¿Es fútbol con carros propulsados por cohetes?",
+                    "es_pregunta": true,
+                    "si": {
+                        "texto": "Rocket League",
+                        "es_pregunta": false
+                    },
+                    "no": {
+                        "texto": "EA Sports FC / FIFA",
+                        "es_pregunta": false
+                    }
+                },
+                "no": {
+                    "texto": "Tetris",
+                    "es_pregunta": false
+                }
             }
         }
     }
