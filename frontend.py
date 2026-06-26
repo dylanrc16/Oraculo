@@ -145,7 +145,7 @@ class AppJuego:
             fila_respuestas.pack(pady=(0, 20))
 
             boton_si = tk.Button(
-                fila_respuestas, text="SÍ, CLARO", font=("Segoe UI", 11, "bold"),
+                fila_respuestas, text="SÍ", font=("Segoe UI", 11, "bold"),
                 bg=self.color_verde_si, fg="white", activebackground="#15803d", activeforeground="white",
                 relief="flat", width=14, bd=0, cursor="hand2", pady=12,
                 command=self.responder_con_si
@@ -153,7 +153,7 @@ class AppJuego:
             boton_si.pack(side=tk.LEFT, padx=15)
 
             boton_no = tk.Button(
-                fila_respuestas, text="NO, TOTAL", font=("Segoe UI", 11, "bold"),
+                fila_respuestas, text="NO", font=("Segoe UI", 11, "bold"),
                 bg=self.color_rojo_no, fg="white", activebackground="#b91c1c", activeforeground="white",
                 relief="flat", width=14, bd=0, cursor="hand2", pady=12,
                 command=self.responder_con_no
