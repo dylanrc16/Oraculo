@@ -6,7 +6,7 @@ import os
 class AppJuego:
     def __init__(self, ventana_principal):
         self.ventana = ventana_principal
-        self.ventana.title(" Akinator ")
+        self.ventana.title(" ORACULO ")
         self.ventana.geometry("1000x500")
         self.ventana.resizable(False, False) # Evita que se deforme la ventana
         
@@ -64,13 +64,13 @@ class AppJuego:
 
         # Título del juego elegante y minimalista
         etiqueta_titulo = tk.Label(
-            self.contenedor_pantallas, text=" AKINATOR ", 
+            self.contenedor_pantallas, text=" ORÁCULO ", 
             font=("Segoe UI", 26, "bold"), bg=self.fondo_claro_general, fg=self.color_texto_oscuro
         )
         etiqueta_titulo.pack(pady=(30, 5))
 
         etiqueta_subtitulo = tk.Label(
-            self.contenedor_pantallas, text="Pensá en algo y la Inteligencia Artificial intentará adivinar.", 
+            self.contenedor_pantallas, text="Pensá en algo y el sistema intentará adivinar.", 
             font=("Segoe UI", 11), bg=self.fondo_claro_general, fg=self.color_texto_gris
         )
         etiqueta_subtitulo.pack(pady=(0, 40))
