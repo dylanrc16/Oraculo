@@ -49,8 +49,35 @@ class ArbolDecision:
                 raise ValueError("Pregunta sin ramas definidas")
             nodo.si = self._diccionario_a_nodo(datos["si"])
             nodo.no = self._diccionario_a_nodo(datos["no"])
-            
         return nodo
+    
+    def aprender(self, nodo_padre, fue_si, nuevo_objeto, nueva_pregunta, respuesta_es_si):
+    
+        #Reemplaza el nodo hoja actual con una nueva pregunta que distingue
+        #el objeto nuevo del objeto que ya estaba en el árbol.
+        
+        nuevo_nodo_pregunta = NodoDecision(nueva_pregunta, es_pregunta=True)
+        nuevo_nodo_objeto = NodoDecision(nuevo_objeto, es_pregunta=False)
+        
+        # guardás el texto antes de tocar nada
+        texto_antiguo = self.raiz.texto if nodo_padre is None else (nodo_padre.si if fue_si else nodo_padre.no).texto
+        nodo_antiguo = NodoDecision(texto_antiguo, es_pregunta=False)
+
+        if respuesta_es_si:
+            nuevo_nodo_pregunta.si = nuevo_nodo_objeto
+            nuevo_nodo_pregunta.no = nodo_antiguo
+        else:
+            nuevo_nodo_pregunta.si = nodo_antiguo
+            nuevo_nodo_pregunta.no = nuevo_nodo_objeto
+
+        if nodo_padre is None:
+            self.raiz = nuevo_nodo_pregunta
+        elif fue_si:
+            nodo_padre.si = nuevo_nodo_pregunta
+        else:
+            nodo_padre.no = nuevo_nodo_pregunta
+                
+        
 
     def guardar_en_archivo(self, ruta_archivo):
         """Guarda el árbol en un archivo JSON válido."""

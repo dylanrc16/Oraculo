@@ -258,45 +258,30 @@ class AppJuego:
         boton_guardar_conocimiento.pack(pady=(15, 5))
 
     def ejecutar_registro_aprendizaje(self):
-        """Toma los datos ingresados y reestructura los nodos del árbol."""
         objeto_usuario = self.entrada_nuevo_objeto.get().strip().lower()
         pregunta_usuario = self.entrada_nueva_pregunta.get().strip()
-        
-        # Validaciones obligatorias de campos vacíos (RF-14)
+
         if objeto_usuario == "" or pregunta_usuario == "":
             messagebox.showwarning("Campos vacíos", "Por favor completa todos los campos")
             return
 
-        # Corrección inteligente de signos
         if not pregunta_usuario.startswith("¿"): pregunta_usuario = "¿" + pregunta_usuario
         if not pregunta_usuario.endswith("?"): pregunta_usuario = pregunta_usuario + "?"
 
-        # Crear nuevos nodos
-        nuevo_nodo_pregunta = NodoDecision(pregunta_usuario, es_pregunta=True)
-        nuevo_nodo_objeto = NodoDecision(objeto_usuario, es_pregunta=False)
-        nodo_antiguo_objeto = NodoDecision(self.nodo_actual.texto, es_pregunta=False)
+        respuesta_es_si = self.variable_seleccion_si_no.get() == "Sí"
 
-        # Enlazar ramas según la opción
-        if self.variable_seleccion_si_no.get() == "Sí":
-            nuevo_nodo_pregunta.si = nuevo_nodo_objeto
-            nuevo_nodo_pregunta.no = nodo_antiguo_objeto
-        else:
-            nuevo_nodo_pregunta.si = nodo_antiguo_objeto
-            nuevo_nodo_pregunta.no = nuevo_nodo_objeto
+        self.arbol_logico.aprender(
+            self.nodo_padre_actual,
+            self.el_ultimo_paso_fue_si,
+            objeto_usuario,
+            pregunta_usuario,
+            respuesta_es_si
+        )
 
-        # Conectar subárbol al árbol principal
-        if self.nodo_padre_actual is None:
-            self.arbol_logico.raiz = nuevo_nodo_pregunta
-        elif self.el_ultimo_paso_fue_si:
-            self.nodo_padre_actual.si = nuevo_nodo_pregunta
-        else:
-            self.nodo_padre_actual.no = nuevo_nodo_pregunta
-
-        # Guardado automático obligatorio en segundo plano usando la ruta unificada (.json)
         self.arbol_logico.guardar_en_archivo(self.archivo_guardado_automatico)
+        messagebox.showinfo("Aprendizaje Completo", "¡Conocimiento guardado automáticamente!")
 
-        messagebox.showinfo("Aprendizaje Completo", "¡Conocimiento guardado automáticamente de forma segura!")
-        
+        # Esto es lo que faltaba
         jugar_de_nuevo = messagebox.askyesno("Nueva partida", "¿Querés jugar otra partida con el conocimiento nuevo?")
         if jugar_de_nuevo:
             self.iniciar_partida()
