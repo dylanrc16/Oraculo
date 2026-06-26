@@ -21,8 +21,24 @@
             "es_pregunta": false
         },
         "no": {
-            "texto": "Computadora",
-            "es_pregunta": false
+            "texto": "¿Es una planta?",
+            "es_pregunta": true,
+            "si": {
+                "texto": "¿Es amarilla?",
+                "es_pregunta": true,
+                "si": {
+                    "texto": "girasol",
+                    "es_pregunta": false
+                },
+                "no": {
+                    "texto": "girasol",
+                    "es_pregunta": false
+                }
+            },
+            "no": {
+                "texto": "Computadora",
+                "es_pregunta": false
+            }
         }
     }
 }
